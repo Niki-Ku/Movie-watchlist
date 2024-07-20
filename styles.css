@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+
+html{
+    background: #f1f1f1;
+}
+
+a,
+a:visited,
+a:active{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    background: #121212;
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+/* TYPOGRAPHY */
+
+h1{
+    font-size: 2.625rem;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+p{
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+input,
+button,
+a{
+    font-size: 0,875rem;
+    font-weight: 500;
+}
+
+
+/* HEADER */
+
+.header-div{
+    height: 13.125em;
+    background-image: linear-gradient(to left, rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url(/images/header-img.png);
+    background-position: top 25% left 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---------------------   finish searchbar  ------------------------------- */
+.search-bar{
+    position: absolute;
+    bottom: -15px;
+    margin: 0 auto;
+    display: flex;
+    background: #2E2E2F;
+    width: 80%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.fa-magnifying-glass{
+    color: #A5A5A5;
+}
+
+.search-bar input,
+.search-bar label{
+    color: #A5A5A5;
+    background: #2E2E2F;
+    border: none;
+    padding: 0.5em;
+}
+
+.search-bar input{
+    width: 100%;
+}
+
+.search-bar button{
+    background: #4B4B4B;
+    padding: 0.5em 2em ;
+    border: none;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+.search-bar button:focus{
+    outline: none;
+    color: #b5bebf;
+    text-decoration: underline;
+}
+
+/* main */
+
+
+.bg-text-main{
+    position: absolute;
+    top: 55%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #2E2E2F;
+    max-width: 50%;
+}
+
+.bg-text-main .not-found{
+    color: #787878;
+}
+
+
+.fa-film,
+.bg-text-main h2{
+    color: #2E2E2F;
+}
+
+.fa-film{
+    font-size: 3.875rem;
+}
+
+.cards-display{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    margin: 4em 0 0 0;
+}
+
+.search-results{
+    width: 85%
+}
+
+.card{
+    margin-bottom: 1em;
+    padding-bottom: 1.25em;
+    border-bottom: 1.5px solid #2C2C2C;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: minmax(auto, 25%) 2fr;
+    grid-template-rows: minmax(160px, 180px);
+    gap: 1em;
+}
+
+
+.card-poster{
+    height: 100%;
+}
+
+.card-poster img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.card-description{
+    margin-top: 1em;
+}
+
+.description-title{
+    display: flex;
+    align-items: flex-end;
+    gap: .5rem;
+}
+
+.fa-star{
+    color: #FEC654;
+}
+
+.description-details{
+    display: flex;
+    gap: 1em;
+    margin: 0.625em 0;
+}
+
+.plot{
+    font-size: 0.875rem;
+    color: #A5A5A5;
+}
+
+/* Buttons inputs */
+
+.add-watchlist{
+    background: none;
+    border: none;
+    flex-wrap: nowrap;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+
+/* UTILITY */
+
+.fw-700{
+    font-weight: 700;
+}
+
+.fs-mini{
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.flex-no-wrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
